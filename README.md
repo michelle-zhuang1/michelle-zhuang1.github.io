@@ -1,1 +1,1 @@
-# Michelle-Zhuang
+# IntroToGit
