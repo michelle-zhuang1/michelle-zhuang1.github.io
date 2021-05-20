@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelle Zhuang | Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d544accf6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section class="header">
+    <nav> 
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Summer Project</a></li>
+          <li><a href="">Baking</a></li>
+          <div class="underbar"></div>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>Hello!</h1>
+      <p>
+        Hi! I'm Michelle Zhuang. I'm currently a junior at Swarthmore College.
+      </p>
+      <a href="https://www.linkedin.com/in/michelle-zhuang" class="hero-btn">Here's my LinkedIn</a>
+    </div>
+  </section>
+
+<!------ About ------>
+<section class = "about">
+  <h1>Who am I?</h1>
+  <p>asdf</p> 
+</section>
+
+<!------ Pictures ----->
+<section class ="pic">
+  <h1>Picture heading</h1>
+  <p> Picture paragraph</p>
+  <div class="row">
+    <div class="pic-col">
+      <img src="images/macaron.jpeg">
+    </div>
+    <div class="pic-col">
+      <img src="images/croissant.jpeg">
+    </div>
+    <div class="pic-col">
+      <img src="images/cake.jpeg">
+    </div>
+  </div>
+</section>
+
+<!------ footer ----->
+<section class="footer">
+  <p>Website created by Michelle Zhuang &#169 2021</p>
+</section>
+
+<!------ JavaScript for Toggle Menu ------>
+<script> 
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.left = "0"
+
+  }
+  function hideMenu(){
+    navLinks.style.left = "-200px"
+  }
+</script>
+
+</body>
+</html>
+
+
+
