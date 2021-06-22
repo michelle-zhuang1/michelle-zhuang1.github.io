@@ -15,7 +15,14 @@
         <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="summerProject.html">Summer Project</a></li>
+          <li class="dropdown">
+            <a href="summerProject.html">Summer Project</a>
+            <div class="dropdown-content">
+              <a href="summerProject.html#background">&#8226 Background</a>
+              <a href="summerProject.html#process">&#8226 Process</a>
+              <a href="summerProject.html#results">&#8226 Results</a>
+            </div>
+          </li>
           <li><a href="baking.html">Baking</a></li>
           <div class="underbar"></div>
         </ul>
@@ -23,14 +30,93 @@
       <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <div class="text-box">
-
+      <h1>Summer 2021 Project:</h1>
+      <h2>Computational Sewing Patterns</h2>
     </div>
   </section>
+
+<!------ background ----->
+<section id="background">
+  <div class="projectRow">
+    <div class="projectCol-L">
+      <h1>Background and Motivation</h1>
+      <p>This project focuses on the intersection of clothing and fabric with computation and engineering. 
+        During my time on campus, I worked as a costume shop assistant, sewing, measuring, and altering 
+        clothes for campus productions. During the past year in quarantine at home, I have continued this passion 
+        for craft and innovation via upcycling clothes -- for example, I turned a pair of my father&#39;s forgotten 
+        corduroys into a dress. As an Engineering student, I hope to combine this passion for innovation with my passion
+        for technology and knowledge of computation. <br><br>
+        Working alongside Professor Ganapati of the Engineering Department at Swarthmore College, we have discussed
+        ways to bridge the gap between these two passions of mine, with ideas focused on using computation to take 
+        in measurements from an article of clothing and create sewing patterns to upcycle it. In 2017, nearly 17 million 
+        tonnes of textiles were thrown into landfills or burned. Combined with today&#39;s fast fashion, I believe this project
+        serves an important purpose in creating accessible ways to upcycle clothes that would otherwise be thrown away or burned. 
+        Likewise, I plan to continue my work as a costume shop assistant when I return to campus, and I believe this would be helpful 
+        in repurposing the hundreds of costumes kept in storage.
+      </p>
+    </div>
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <div class="slide first">
+          <img src="images/corduroyBefore.jpeg" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/corduroyAfter.jpg" alt="">
+        </div>
+        <div class="nav-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+        </div>
+      </div>
+      <div class="nav-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------ process ----->
+<section id="process">
+  <h1>Process</h1>
+  <h2>Week 1</h2>
+  <p></p>
+</section>
+
+<!------ results ----->
+<section id="results">
+  <h1>Results (tbd)</h1>
+</section> 
 
 <!------ footer ----->
 <section class="footer">
     <p>Website created by Michelle Zhuang &#169 2021</p>
 </section>
+
+<!------ JavaScript for Toggle Menu ------>
+<script> 
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.left = "0"
+
+  }
+  function hideMenu(){
+    navLinks.style.left = "-200px"
+  }
+</script>
+<!------ JavaScript for Photo Slides ------>
+<script> 
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if (counter > 2) {
+      counter = 1;
+    }
+  }, 3000);
+</script>
 
 </body>
 </html>
