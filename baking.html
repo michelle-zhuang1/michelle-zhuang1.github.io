@@ -15,7 +15,14 @@
         <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="summerProject.html">Summer Project</a></li>
+          <li class="dropdown">
+            <a href="summerProject.html">Summer Project</a>
+            <div class="dropdown-content">
+              <a href="summerProject.html#background">&#8226 Background</a>
+              <a href="summerProject.html#process">&#8226 Process</a>
+              <a href="summerProject.html#results">&#8226 Results</a>
+            </div>
+          </li>
           <li><a href="baking.html">Baking</a></li>
           <div class="underbar"></div>
         </ul>
@@ -26,6 +33,59 @@
 
     </div>
   </section>
+  
+<div class="bakingGallery"></div>
+  <div class="row">
+    <div class="pic-col">
+      <img src="images/macaron.jpeg">
+    </div>
+    <div class="pic-col">
+      <img src="images/croissant.jpeg">
+    </div>
+    <div class="pic-col">
+      <img src="images/buns.jpeg">
+    </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="pic-col">
+      <img src="images/brochi.jpeg">
+    </div>
+    <div class="pic-col">
+      <img src="images/cookies.jpeg">
+    </div>
+    <div class="pic-col">
+      <img src="images/mooncake.jpeg">
+    </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="pic-col">
+      <img src="images/cake.jpeg">
+    </div>
+    <div class="pic-col">
+      <img src="images/biscotti.jpeg">
+    </div>
+    <div class="pic-col">
+      <img src="images/crepecake.jpeg">
+    </div>
+    </div>
+  </div>
+</div>
+
+<!------ JavaScript for Toggle Menu ------>
+<script> 
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.left = "0"
+
+  }
+  function hideMenu(){
+    navLinks.style.left = "-200px"
+  }
+</script>
 
 <!------ footer ----->
 <section class="footer">
