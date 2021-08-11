@@ -46,7 +46,7 @@ nav img{
 .nav-links ul li a{
   color: #fff;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
 }
 .nav-links ul li a:hover{
@@ -229,34 +229,30 @@ nav .fa{
 /*----- home: about me-----*/
 .about{
   display: flex;
-  width: 90%;
+  width: 75%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
 }
-.about-row{
-  margin-top: 5%;
-  display: flex;
+.aboutInfo{
+  column-count: 2;
+  padding: 20x 50px;
 }
-.about-col{
-  flex-basis: 40%;
-  padding: 20px 50px;
-}
-.about-col h1{
+.aboutInfo h1{
   padding-top: 0;
+  padding-left: 7px;
   text-align: left;
 }
-.about-col p{
-  padding: 15px 2px 25px;
+.aboutInfo p{
   font-size: 18px;
   text-align: left;
 }
-.about-col img{
-  float: left;
-  padding-left: 60px;
+.aboutInfo img{
+  float: right;
   max-width: 100%;
   width: inherit;
 }
+
 .resume{
   display: inline-block;
   text-decoration: none;
@@ -422,6 +418,15 @@ nav .fa{
 #process h2{
   padding-top: 10px;
   margin-left: 10px;
+}
+#process p{
+  text-align: left;
+  display: flex;
+  font-size: 18px;
+  margin-left: 22px;
+}
+#process img{
+  max-width: 100%;
 }
 
 /*----- project: results -----*/
