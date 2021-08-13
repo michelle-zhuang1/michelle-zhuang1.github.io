@@ -407,7 +407,7 @@ nav .fa{
     display: none;
   }
 }
-/*----- project: process -----*/
+/*----- project: process 
 #process{
   margin-top: 5%;
   margin-left: 30px;
@@ -426,13 +426,21 @@ nav .fa{
   margin-left: 22px;
 }
 #process img{
-  max-width: 100%;
+  max-width: 75%;
 }
+-----*/
 
 /*----- project: results -----*/
 #results{
   margin-top: 5%;
   margin-left: 30px;
+  margin-right: 30px;
+}
+#results .firstSet{
+  text-align: center;
+}
+#results .firstSet img{
+  max-width: 85%;
 }
 
 /*----- baking -----*/
