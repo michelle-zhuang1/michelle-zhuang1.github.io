@@ -31,64 +31,27 @@
     </nav>
     <div class="text-box">
       <div class="bakingText">
-      <h1>Baking Showcase!</h1>
-        <p>
-          Over the course of quarantine and my Zoom semesters at home, I picked up baking as a newfound passion. I believe it highlights many of my 
-          strengths: determination, punctuality, and creativity.
-        </p>
-        <p>
-          From recreating a recipe til I get it right, to developing my own recipes and tweaks, baking has been a hand-on passion of mine that helps
-          me explore my creative side. 
-        </p>
-        <p>
-          Food is something most of us can bond over. Below you'll fine mooncakes, baked completely from scratch, shared over the Mid-Autumn Festival with my family,
-          and baked cookies sent to friends I had not seen for month. I am grateful for this passion of mine and how it has helped me express my creativity, all While
-          helping me continue to connect and build relationships in my life.
-        </p>
+      <h1>Summer Internship at Oracle OCI:</h1>
+      <h2>Data Ingestion into OpenSearch Cluster</h2>
       </div>
     </div>
   </section>
   
-<div class="bakingGallery"></div>
-  <div class="row">
-    <div class="pic-col">
-      <img src="images/macaron.jpeg">
+<!------ problem statement/overiew ----->
+<section id="problemStatement">
+    <div class="problemStatementInfo">
+        <h1>Problem Statement</h1>
+        <p>Oracle OCI's Security Central ingests several million findings per day from it's scanners. The ingested data is stored in a relational database which is used to power Security Central UI; however, sorting, filtering, and paging data with millions of rows is not a scalable option. This can cause delays and customer pain.</p>
+        <h1>Solution</h1>
+        <p>Ingest data and push it to OpenSearch cluster through implemnted workflows and helpers. Security Central's data can be more easily processed by searching and filtering the data in OpenSearch. OpenSearch is an open-source project which is designed to faciliate searching, analyzing, and visualizing data. To utilize this, the data from Security Central's database must be ingested into OpenSearch. </p>
+        <h1>Design</h1>
+        <p>Ingestion workflow per finding source shall run every 5 minutes and look for updated data over the last 10 minutes and pushes/updates the data into OpenSearch cluster.</p>
+        <img src="images/workflowDesign.jpg">
+        <h1>Results</h1>
+        <p>Ingested and populated several thousand findings from database into OpenSearch for customers and teams to use.</p>
+        <img src="ingestedFindings.jpg">
     </div>
-    <div class="pic-col">
-      <img src="images/croissant.jpeg">
-    </div>
-    <div class="pic-col">
-      <img src="images/buns.jpeg">
-    </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="pic-col">
-      <img src="images/brochi.jpeg">
-    </div>
-    <div class="pic-col">
-      <img src="images/cookies.jpeg">
-    </div>
-    <div class="pic-col">
-      <img src="images/mooncake.jpeg">
-    </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="pic-col">
-      <img src="images/cake.jpeg">
-    </div>
-    <div class="pic-col">
-      <img src="images/biscotti.jpeg">
-    </div>
-    <div class="pic-col">
-      <img src="images/crepeCake.jpeg">
-    </div>
-    </div>
-  </div>
-</div>
+  </section>
 
 <!------ JavaScript for Toggle Menu ------>
 <script> 

@@ -443,6 +443,29 @@ nav .fa{
   max-width: 85%;
 }
 
+/*----- internship -----*/
+#problemStatement{
+  margin-top: 5%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#problemStatement h1{
+  text-align: left;
+  margin-left: 30px;
+}
+#problemStatement p{
+  display: flex;
+  text-align: left;
+  font-size: 18px;
+  margin-left: 22px;
+}
+#problemStatement img{
+  text-align: center;
+  margin-left: 50px;
+  max-width: 70%;
+}
+
+
 /*----- baking -----*/
 .bakingText h1{
   margin-bottom: 2%;
@@ -456,5 +479,6 @@ nav .fa{
 .bakingGallery .row{
   width: 50%
 }
+
 
 
