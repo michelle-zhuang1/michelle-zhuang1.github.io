@@ -248,7 +248,7 @@ nav .fa{
   text-align: left;
 }
 .aboutInfo img{
-  float: right;
+  /* float: right; */
   max-width: 100%;
   width: inherit;
 }
