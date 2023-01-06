@@ -247,7 +247,7 @@ nav .fa{
   font-size: 18px;
   text-align: left;
 }
-.aboutInfo img{}
+.aboutInfo img{
   /* float: right; */
   max-width: 100%;
   width: inherit;
