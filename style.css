@@ -233,7 +233,6 @@ nav .fa{
   margin: auto;
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 20%;
 }
 .aboutInfo{
   column-count: 2;
@@ -273,7 +272,7 @@ nav .fa{
 
 /*----- home: pics -----*/
 .pic p{
-  margin-top: 20%;
+  margin: auto;
   padding-top: 10%;
   padding-left: 50px;
   padding-right: 50px;
